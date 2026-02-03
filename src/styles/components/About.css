@@ -1,0 +1,96 @@
+.about {
+  padding: 4rem 2rem;
+  background: transparent;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--blue-primary);
+  background: linear-gradient(135deg, var(--blue-primary), var(--blue-sky));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-text {
+  margin-bottom: 3rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.skills {
+  margin-top: 3rem;
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--purple-light);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(135deg, var(--purple-primary), var(--purple-secondary));
+  color: var(--text-primary);
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 2px solid var(--purple-dark);
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, var(--purple-secondary), var(--purple-light));
+  border-color: var(--blue-primary);
+  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .skills-title {
+    font-size: 1.25rem;
+  }
+
+  .skill-tag {
+    font-size: 0.85rem;
+    padding: 0.4rem 1.2rem;
+  }
+}
