@@ -3,9 +3,9 @@ import '../styles/components/Footer.css'
 
 function Footer() {
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com', icon: '🔗' },
-    { name: 'LinkedIn', url: 'https://linkedin.com', icon: '🔗' },
-    { name: 'Email', url: 'mailto:your.email@example.com', icon: '✉️' },
+    { name: 'GitHub', url: 'https://github.com/mattqgoldberg', icon: '🔗' },
+    { name: 'LinkedIn', url: 'https://linkedin.com/in/mattqgoldberg', icon: '🔗' },
+    { name: 'Email', url: 'mailto:matt.q.goldberg@gmail.com', icon: '✉️' },
   ]
 
   return (

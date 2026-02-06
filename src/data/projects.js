@@ -1,26 +1,26 @@
 export const projects = [
   {
     id: 1,
-    title: "Project One",
-    description: "A modern web application built with React and Node.js. Features include user authentication, real-time updates, and a responsive design.",
+    title: "Domino Tile Classifier",
+    description: "A classifier to detect the number of pips on a domino tile. Custom convolutional neural network architecture built with pytorch.",
     tech: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com/example/project-one",
+    github: "https://github.com/mattqgoldberg/domino-counter",
     live: "https://project-one-demo.com"
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "An interactive dashboard for data visualization. Built with modern JavaScript frameworks and includes various chart types and filtering options.",
-    tech: ["JavaScript", "D3.js", "CSS"],
-    github: "https://github.com/example/project-two",
+    title: "Snake Game",
+    description: "Snake game implementation in C++ using the SFML graphics library. Demonstrates software architecture principles using a state machine to manage application control flow.",
+    tech: ["C++", "SFML", "LLDB"],
+    github: "https://github.com/mattqgoldberg/snake-game",
     live: "https://project-two-demo.com"
   },
   {
     id: 3,
-    title: "Project Three",
-    description: "A mobile-first e-commerce platform with shopping cart functionality, payment integration, and admin panel.",
-    tech: ["React", "Express", "PostgreSQL"],
-    github: "https://github.com/example/project-three",
+    title: "TCP Server",
+    description: "A TCP Server in C++, following Beej's Guide to Networking. I am just starting my networking journey and working on an HTTP Server!",
+    tech: ["C++", "Sockets", "TCP"],
+    github: "https://github.com/mattqgoldberg/tcp-server",
     live: "https://project-three-demo.com"
   }
 ]

@@ -18,20 +18,15 @@ function About() {
           <h1 className="about-title">About Me</h1>
           <div className="about-text">
             <p>
-              Welcome to my portfolio! I'm a developer passionate about creating 
-              beautiful and functional web experiences. I love working with modern 
-              technologies and bringing ideas to life through code.
-            </p>
-            <p>
-              When I'm not coding, you can find me exploring new technologies, 
-              contributing to open source projects, or working on personal projects 
-              that challenge me to grow.
+			  Hello, my name is Matt! Welcome to my portfolio! I'm a computer engineering
+			  student passionate about learning everything about computers top to bottom!
+			  I love learning about different technologies and bringing code to life!
             </p>
           </div>
           <div className="skills">
             <h2 className="skills-title">Skills & Technologies</h2>
             <div className="skills-list">
-              {['React', 'JavaScript', 'Node.js', 'CSS', 'HTML', 'Git'].map((skill, index) => (
+              {['Python', 'C++', 'Git', 'Javascript', 'Jira', 'Bash'].map((skill, index) => (
                 <motion.span
                   key={skill}
                   className="skill-tag"

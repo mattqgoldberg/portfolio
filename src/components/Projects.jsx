@@ -53,7 +53,7 @@ function Projects() {
                       GitHub
                     </a>
                   )}
-                  {project.live && (
+                  {/*project.live && (
                     <a 
                       href={project.live} 
                       target="_blank" 
@@ -62,7 +62,7 @@ function Projects() {
                     >
                       Live Demo
                     </a>
-                  )}
+                  )*/}
                 </div>
               </div>
             </motion.div>
