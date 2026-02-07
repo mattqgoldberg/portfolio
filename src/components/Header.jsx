@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import '../styles/components/Header.css'
 
-function Header({ scrollToAbout, scrollToProjects }) {
+function Header({ scrollToAbout, scrollToProjects, theme, onThemeToggle }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
@@ -14,17 +14,21 @@ function Header({ scrollToAbout, scrollToProjects }) {
         transition={{ duration: 0.5 }}
       >
         <div className="nav-container">
-          <motion.div 
-            className="logo"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Portfolio
-          </motion.div>
+          <div className="logo">
+            mattgoldberg.dev
+          </div>
           
           <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
             <button onClick={scrollToAbout} className="nav-link">About</button>
             <button onClick={scrollToProjects} className="nav-link">Projects</button>
+            <button 
+              onClick={onThemeToggle} 
+              className="theme-toggle"
+              aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+              title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            >
+              {theme === 'dark' ? '☀' : '☽'}
+            </button>
           </div>
 
           <button 

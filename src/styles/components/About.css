@@ -19,11 +19,7 @@
 .about-title {
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: var(--blue-primary);
-  background: linear-gradient(135deg, var(--blue-primary), var(--blue-sky));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--green-primary);
 }
 
 .about-text {
@@ -34,7 +30,7 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: var(--text-secondary);
+  color: var(--green-secondary);
 }
 
 .skills {
@@ -44,7 +40,7 @@
 .skills-title {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: var(--purple-light);
+  color: var(--neon-cyan);
 }
 
 .skills-list {
@@ -56,20 +52,19 @@
 .skill-tag {
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  background: linear-gradient(135deg, var(--purple-primary), var(--purple-secondary));
-  color: var(--text-primary);
-  border-radius: 25px;
+  background: transparent;
+  color: var(--neon-cyan);
+  border-radius: 4px;
   font-size: 0.9rem;
   font-weight: 500;
-  border: 2px solid var(--purple-dark);
+  border: 1px solid var(--neon-cyan);
   cursor: default;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .skill-tag:hover {
-  background: linear-gradient(135deg, var(--purple-secondary), var(--purple-light));
-  border-color: var(--blue-primary);
-  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+  color: var(--neon-pink);
+  border-color: var(--neon-pink);
 }
 
 @media (max-width: 768px) {

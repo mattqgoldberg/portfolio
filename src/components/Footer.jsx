@@ -25,7 +25,7 @@ function Footer() {
               whileHover={{ scale: 1.2, y: -5 }}
               whileTap={{ scale: 0.9 }}
             >
-              <span className="footer-icon">{link.icon}</span>
+              {/* <span className="footer-icon">{link.icon}</span> */}
               <span className="footer-text">{link.name}</span>
             </motion.a>
           ))}
@@ -36,7 +36,7 @@ function Footer() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-          © {new Date().getFullYear()} Portfolio. All rights reserved.
+          © {new Date().getFullYear()} Matt Goldberg. All rights reserved.
         </motion.p>
       </div>
     </footer>
