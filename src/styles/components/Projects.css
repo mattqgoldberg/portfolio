@@ -26,6 +26,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  align-items: stretch;
 }
 
 .project-card {
@@ -36,6 +37,8 @@
   transition: all 0.3s ease;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -71,6 +74,10 @@
 
 .project-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 .project-title {
@@ -84,6 +91,7 @@
   line-height: 1.6;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
+  flex: 1;
 }
 
 .project-tech {
