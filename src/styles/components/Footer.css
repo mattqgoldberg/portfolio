@@ -1,6 +1,6 @@
 .footer {
   background: transparent;
-  border-top: 2px solid var(--purple-primary);
+  border-top: 1px solid var(--neon-cyan);
   padding: 3rem 2rem 2rem;
   margin-top: 4rem;
 }
@@ -23,21 +23,29 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--text-primary);
+  color: var(--neon-cyan);
   text-decoration: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--purple-dark), var(--purple-primary));
-  border: 2px solid var(--purple-secondary);
-  transition: all 0.3s ease;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid var(--neon-cyan);
+  transition: all 0.2s ease;
   font-weight: 500;
 }
 
 .footer-link:hover {
-  background: linear-gradient(135deg, var(--purple-primary), var(--purple-light));
-  border-color: var(--blue-primary);
-  color: var(--blue-sky);
-  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+  color: var(--neon-pink);
+  border-color: var(--neon-pink);
+}
+
+.footer-link:nth-child(2) {
+  color: var(--neon-cyan);
+  border-color: var(--neon-cyan);
+}
+
+.footer-link:nth-child(2):hover {
+  color: var(--neon-pink);
+  border-color: var(--neon-pink);
 }
 
 .footer-icon {
@@ -49,7 +57,7 @@
 }
 
 .footer-copyright {
-  color: var(--text-muted);
+  color: var(--green-dim);
   font-size: 0.9rem;
   margin-top: 1rem;
 }
