@@ -2,8 +2,13 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import '../styles/components/Header.css'
 
-function Header({ scrollToAbout, scrollToProjects, theme, onThemeToggle }) {
+function Header({ scrollToAbout, scrollToProjects, scrollToContact, theme, onThemeToggle }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleNavClick = (scrollFn) => {
+    scrollFn?.()
+    setIsMenuOpen(false)
+  }
 
   return (
     <header className="header">
@@ -19,8 +24,9 @@ function Header({ scrollToAbout, scrollToProjects, theme, onThemeToggle }) {
           </div>
           
           <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-            <button onClick={scrollToAbout} className="nav-link">About</button>
-            <button onClick={scrollToProjects} className="nav-link">Projects</button>
+            <button onClick={() => handleNavClick(scrollToAbout)} className="nav-link">About</button>
+            <button onClick={() => handleNavClick(scrollToProjects)} className="nav-link">Projects</button>
+            <button onClick={() => handleNavClick(scrollToContact)} className="nav-link">Contact</button>
             <button 
               onClick={onThemeToggle} 
               className="theme-toggle"

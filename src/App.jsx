@@ -2,11 +2,13 @@ import { useRef, useState, useEffect } from 'react'
 import Header from './components/Header'
 import About from './components/About'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
   const aboutRef = useRef(null)
   const projectsRef = useRef(null)
+  const contactRef = useRef(null)
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('theme') || 'light'
@@ -27,7 +29,8 @@ function App() {
     <div className="app">
       <Header 
         scrollToAbout={() => scrollToSection(aboutRef)} 
-        scrollToProjects={() => scrollToSection(projectsRef)} 
+        scrollToProjects={() => scrollToSection(projectsRef)}
+        scrollToContact={() => scrollToSection(contactRef)}
         theme={theme}
         onThemeToggle={() => setTheme(prev => prev === 'dark' ? 'light' : 'dark')}
       />
@@ -37,6 +40,9 @@ function App() {
         </div>
         <div ref={projectsRef}>
           <Projects />
+        </div>
+        <div ref={contactRef}>
+          <Contact />
         </div>
       </main>
       <Footer />
