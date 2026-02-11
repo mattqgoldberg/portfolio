@@ -13,17 +13,45 @@
 }
 
 .about-content {
-  max-width: 800px;
+  width: 100%;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.about-text-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-photo-col {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  border: 2px solid var(--neon-cyan);
 }
 
 .about-title {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--green-primary);
 }
 
 .about-text {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .about-text p {
@@ -31,6 +59,64 @@
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: var(--green-secondary);
+}
+
+.subsection-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+  color: var(--neon-cyan);
+}
+
+.education {
+  margin-top: 0.5rem;
+}
+
+.education-line {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.25rem;
+  color: var(--green-secondary);
+}
+
+.education-detail {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  color: var(--green-dim);
+}
+
+.experience {
+  margin-top: 0.5rem;
+}
+
+.experience-item {
+  margin-bottom: 1.5rem;
+}
+
+.experience-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--green-primary);
+  margin-bottom: 0.15rem;
+}
+
+.experience-dates {
+  font-size: 0.9rem;
+  color: var(--green-dim);
+  margin-bottom: 0.5rem;
+}
+
+.experience-bullets {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--green-secondary);
+}
+
+.experience-bullets li {
+  margin-bottom: 0.35rem;
 }
 
 .skills {
@@ -72,12 +158,43 @@
     padding: 3rem 1rem;
   }
 
+  .about-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-photo-col {
+    order: -1;
+  }
+
+  .about-photo {
+    width: 180px;
+    height: 180px;
+  }
+
   .about-title {
     font-size: 2rem;
+    text-align: center;
   }
 
   .about-text p {
     font-size: 1rem;
+  }
+
+  .subsection-title {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+  }
+
+  .education-line,
+  .experience-role {
+    font-size: 0.95rem;
+  }
+
+  .experience-bullets {
+    font-size: 0.9rem;
+    padding-left: 1rem;
   }
 
   .skills-title {
