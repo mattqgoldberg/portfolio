@@ -90,16 +90,16 @@ function Projects() {
                       GitHub
                     </a>
                   )}
-                  {/*project.live && (
+                  {project.live && (
                     <a 
                       href={project.live} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      Live Demo
+                      Live
                     </a>
-                  )*/}
+                  )}
                 </div>
               </div>
             </motion.div>
