@@ -28,5 +28,15 @@ export const projects = [
     github: null,
     live: null,
     image: "/projects/3d-scene-renderer.png"
+  },
+  {
+    id: 4,
+    title: "Domino Tile Image Classifier",
+    description:
+      "PyTorch CNN that classifies domino tiles from a custom 3,000+ image dataset, achieving 99%+ test accuracy. Built the full data pipeline (collection, labeling, augmentation) and evaluation to ensure the model is robust to real-world lighting and orientation.",
+    tech: ["PyTorch", "Python", "CNN"],
+    github: "https://github.com/mattqgoldberg/domino-counter",
+    live: null,
+    image: "/projects/domino.png"
   }
 ]
