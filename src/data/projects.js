@@ -2,7 +2,8 @@ export const projects = [
   {
     id: 1,
     title: "Session Timer",
-    description: "React time-tracking app with Firebase Auth/Firestore real-time sync, category-based stats, and GitHub Actions deployment to GitHub Pages.",
+    description:
+      "React + Vite session timer with stopwatch, session history, and time-range stats so working hours are visible and auditable instead of estimated. Uses Firebase Auth/Firestore with offline-first localStorage to sync sessions across devices, even when the backend is unavailable.",
     tech: ["React", "Firebase", "Vite", "Vitest"],
     github: null,
     live: "https://timer.mattgoldberg.dev",
@@ -10,38 +11,22 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Domino Tile Image Classifier",
-    description: "PyTorch CNN for domino pip detection; 99%+ test accuracy on a custom 3000+ image dataset.",
-    tech: ["PyTorch", "Python", "CNN"],
-    github: "https://github.com/mattqgoldberg/domino-counter",
-    live: null,
-    image: "/projects/domino.png"
-  },
-  {
-    id: 3,
     title: "Developer Journal Website",
-    description: "Team of 10, agile sprints; CI/CD with Puppeteer E2E tests, PWA, and GitHub Actions for docs and formatting.",
+    description:
+      "Led a 10-person engineering team using Agile sprints to ship a developer journal web app on schedule. Designed a GitHub Actions CI/CD pipeline with Puppeteer E2E tests and PWA support to catch UI regressions early, enable offline use, and keep deployments reliable.",
     tech: ["JavaScript", "GitHub Actions", "Puppeteer", "PWA"],
     github: "https://github.com/cse110-sp24-group4/cse110-sp24-group4",
     live: null,
     image: "/projects/devdog.png"
   },
   {
-    id: 4,
-    title: "Snake Game",
-    description: "C++ / SFML game with a state-machine architecture for control flow.",
-    tech: ["C++", "SFML", "LLDB"],
-    github: "https://github.com/mattqgoldberg/snake-game",
+    id: 3,
+    title: "3D Scene Renderer",
+    description:
+      "C++/OpenGL 3D renderer implementing model-view-projection transforms, near-plane clipping, and perspective-correct depth interpolation for accurate z-buffering. Renders indexed triangle meshes via a custom scene graph to support hierarchical transforms and efficient multi-object scenes.",
+    tech: ["C++", "OpenGL", "Graphics"],
+    github: null,
     live: null,
-    image: "/projects/snake.jpg"
-  },
-  {
-    id: 5,
-    title: "TCP Server",
-    description: "C++ TCP server from Beej's Guide; stepping stone toward an HTTP server.",
-    tech: ["C++", "Sockets", "TCP"],
-    github: "https://github.com/mattqgoldberg/tcp-server",
-    live: null,
-    image: "/projects/tcp-server.jpg"
+    image: "/projects/3d-scene-renderer.png"
   }
 ]
